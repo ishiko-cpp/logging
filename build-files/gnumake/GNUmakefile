@@ -76,22 +76,22 @@ all: ../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoLogging-
 	$(RANLIB) $@
 
 $(_builddir)IshikoLogging_Logger.o: ../../src/Logger.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++11 ../../src/Logger.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++14 ../../src/Logger.cpp
 
 $(_builddir)IshikoLogging_LoggingSink.o: ../../src/LoggingSink.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++11 ../../src/LoggingSink.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++14 ../../src/LoggingSink.cpp
 
 $(_builddir)IshikoLogging_LogLevel.o: ../../src/LogLevel.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++11 ../../src/LogLevel.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++14 ../../src/LogLevel.cpp
 
 $(_builddir)IshikoLogging_NullLoggingSink.o: ../../src/NullLoggingSink.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++11 ../../src/NullLoggingSink.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++14 ../../src/NullLoggingSink.cpp
 
 $(_builddir)IshikoLogging_StandardStreamsLoggingSink.o: ../../src/StandardStreamsLoggingSink.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++11 ../../src/StandardStreamsLoggingSink.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++14 ../../src/StandardStreamsLoggingSink.cpp
 
 $(_builddir)IshikoLogging_StreamLoggingSink.o: ../../src/StreamLoggingSink.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++11 ../../src/StreamLoggingSink.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_FMT_ROOT)/include -I../../include/Ishiko/Logging -std=c++14 ../../src/StreamLoggingSink.cpp
 
 clean:
 	rm -f $(_builddir)*.o
