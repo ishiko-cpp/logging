@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="https://nuime.org/schema/core/1">
-  <name>logging</name>
+  <name>IshikoLogging</name>
   <targets>
     <target>
-      <name>logging-lib</name>
+      <name>lib</name>
       <labels>
         <label>nuime:product</label>
       </labels>
@@ -11,9 +11,9 @@
         <property name="nuime:test-suite">
           <target-ref>
             <location>
-              <url>https://github.com/ishiko-cpp/logging/tests/build-files/nuime/logging-tests.nuime</url>
+              <url>https://github.com/ishiko-cpp/logging/tests/build-files/nuime/IshikoLoggingTests.nuime</url>
             </location>
-            <name>logging-tests</name>
+            <name>tests</name>
           </target-ref>
         </property>
       </properties>
@@ -21,12 +21,12 @@
   </targets>
   <subprojects>
     <subproject>
-      <name>logging-tests</name>
+      <name>IshikoLoggingTests</name>
       <labels>
         <label>nuime:tests</label>
       </labels>
       <location>
-        <url>https://github.com/ishiko-cpp/logging/tests/build-files/nuime/logging-tests.nuime</url>
+        <url>https://github.com/ishiko-cpp/logging/tests/build-files/nuime/IshikoLoggingTests.nuime</url>
       </location>
     </subproject>
   </subprojects>
