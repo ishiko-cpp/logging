@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://nuime.org/schema/core/1">
+  <name>logging</name>
+  <targets>
+    <target>
+      <name>logging-lib</name>
+      <labels>
+        <label>nuime:product</label>
+      </labels>
+      <properties>
+        <property name="nuime:test-suite">
+          <target-ref>
+            <location>
+              <url>https://github.com/ishiko-cpp/logging/tests/build-files/nuime/logging-tests.nuime</url>
+            </location>
+            <name>logging-tests</name>
+          </target-ref>
+        </property>
+      </properties>
+    </target>
+  </targets>
+  <subprojects>
+    <subproject>
+      <name>logging-tests</name>
+      <labels>
+        <label>nuime:tests</label>
+      </labels>
+      <location>
+        <url>https://github.com/ishiko-cpp/logging/tests/build-files/nuime/logging-tests.nuime</url>
+      </location>
+    </subproject>
+  </subprojects>
+</project>
